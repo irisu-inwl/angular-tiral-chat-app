@@ -1,0 +1,6 @@
+<div class="container mt-3">
+    <form [formGroup]="messageForm" (ngSubmit)="addMessage(); $event.preventDefault()" class="d-flex">
+        <input  class="form-control" formControlName="newMessage" placeholder="Type a message">
+        <button class="btn btn-primary ms-2" type="submit">Send</button>
+    </form>
+</div>
